@@ -2,7 +2,24 @@
     title="Faca login na sua Conta"
     primaryBtnText="Login"
     secondaryBtnText="Cadastre">
+
     <form action [formGroup]="loginForm">
-        
+        <app-input
+            formName="email"
+            inputName="email"
+            type="email"
+            label="Email"
+        placeholder="Exemplo@email.com" >
+
+            <img src="/assets/loginimg/email.svg" alt="">
+        </app-input>
+        <app-input
+        formName="password"
+            inputName="password"
+            type="password"
+            label="Senha" 
+           placeholder="Digite sua Senha!" >
+            <img src="/assets/loginimg/password.svg" alt="">
+        </app-input>
     </form>
 </app-layout>
