@@ -1,11 +1,16 @@
 <app-layout
     title="Faca login na sua Conta"
     primaryBtnText="Login"
-    secondaryBtnText="Cadastre">
+    secondaryBtnText="Cadastre"
+    (submit)="submit()"
+    (navigate)="navigate()"
+    [disableprimarybotton]="!loginForm.valid"
+    >
 
     <form action [formGroup]="loginForm">
         <app-input
-            formName="email"
+        formControlName="email"
+            
             inputName="email"
             type="email"
             label="Email"
@@ -14,7 +19,7 @@
             <img src="/assets/loginimg/email.svg" alt="">
         </app-input>
         <app-input
-        formName="password"
+        formControlName="password"
             inputName="password"
             type="password"
             label="Senha" 

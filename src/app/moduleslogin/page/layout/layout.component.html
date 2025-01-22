@@ -4,17 +4,17 @@
         <h2>{{title}}</h2>
         <ng-content> </ng-content>
         <div class="btn-wrapper">
-            <button class="btnprimary">{{primaryBtnText}}</button>
+            <button class="btnprimary" (click)="submit()" [disabled]="disableprimarybotton">{{primaryBtnText}}</button>
             <div class="dividir">
                 <div></div>
                 <span>or</span>
                 <div></div>
             </div>
-            <button class="btnsecondary">{{secondaryBtnText}}</button>
+            <button class="btnsecondary" (click)="navigate()">{{secondaryBtnText}}</button>
         </div>
     </section>
     <section class="main-section">
-        <h1>You ShOULD, titulo!</h1>
+        
         <img src="/assets/loginimg/mainlogo.png" alt />
     </section>
 </main>
