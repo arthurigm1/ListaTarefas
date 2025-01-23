@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class LoginService {
-  apiUrl: string = "http://apitaklist-production.up.railway.app/auth"
+  apiUrl: string = "https://apitaklist-production.up.railway.app/auth"
 
   constructor(private httpClient: HttpClient , private router: Router) { }
 
