@@ -8,13 +8,14 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class LoginService {
-  apiUrl: string = "http://localhost:8080/auth"
+  apiUrl: string = "http://apitaklist-production.up.railway.app/auth"
 
   constructor(private httpClient: HttpClient , private router: Router) { }
 
   login(email: string, password: string){
     return this.httpClient.post<LoginResponse>(this.apiUrl + "/login", { email, password }).pipe(
       tap((value) => {
+        console.log(value)
         sessionStorage.setItem("auth-token", value.token)
         sessionStorage.setItem("username", value.name)
         this.router.navigate(['/tarefas']);
