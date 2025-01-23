@@ -1,5 +1,6 @@
 import { Component, signal } from '@angular/core';
-import Swal from 'sweetalert2';
+
+import Swal from 'sweetalert2'
 
 // Components
 import { InputAddItemComponent } from '../../components/input-add-item/input-add-item.component';

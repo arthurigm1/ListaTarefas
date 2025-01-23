@@ -1,6 +1,6 @@
 import { ChangeDetectorRef, Component, ElementRef, EventEmitter, Input, Output ,ViewChild,inject} from '@angular/core';
 import { IListItems } from '../../interface/IListItems.interface';
-import { CommonModule, JsonPipe } from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-input-add-item',
