@@ -1,0 +1,47 @@
+<app-layout
+    title="Faca o Cadastro da sua Conta"
+    primaryBtnText="Cadastre"
+    secondaryBtnText="Login"
+    (submit)="submit()"
+    (navigate)="navigate()"
+    [disableprimarybotton]="!signupForm.valid"
+    >
+
+    <form action [formGroup]="signupForm">
+     <app-input
+        formControlName="name"
+            inputName="name"
+            type="text"
+            label="Digite seu Nome:"
+        placeholder="Arthur Martins" >
+
+            <img src="/assets/loginimg/email.svg" alt="">
+        </app-input>
+        <app-input
+        formControlName="email"
+            
+            inputName="email"
+            type="email"
+            label="Digite seu Email:"
+        placeholder="Exemplo@email.com" >
+
+            <img src="/assets/loginimg/email.svg" alt="">
+        </app-input>
+        <app-input
+        formControlName="password"
+            inputName="password"
+            type="password"
+            label="Digite sua Senha:" 
+           placeholder="Digite sua Senha!" >
+            <img src="/assets/loginimg/password.svg" alt="">
+        </app-input>
+                <app-input
+        formControlName="passwordConfirm"
+            inputName="passwordConfirm"
+            type="password"
+            label="Confirme sua Senha:" 
+           placeholder="Confirme sua Senha!" >
+            <img src="/assets/loginimg/password.svg" alt="">
+        </app-input>
+    </form>
+</app-layout>
