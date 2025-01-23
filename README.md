@@ -1,59 +1,69 @@
-# ListaTarefas
+# Arthur TaskList
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.7.
+O **Arthur TaskList** é uma aplicação web para gerenciamento de tarefas, onde o usuário pode adicionar tarefas, visualizá-las e marcar como concluídas. A aplicação é composta por um front-end em Angular, um back-end em Java utilizando o framework Spring Boot e um banco de dados PostgreSQL.
 
-## Development server
+## Tecnologias Utilizadas
 
-To start a local development server, run:
+- **Front-End:** Angular
+- **Back-End:** Java Spring Boot
+- **Banco de Dados:** PostgreSQL
+- **Deploy do Back-End:** Railway
+- **Deploy do Front-End:** Netlify
 
-```bash
+## Funcionalidades
+
+- Adicionar, editar e excluir tarefas.
+- Marcar tarefas como concluídas.
+- Visualizar a lista de tarefas pendentes.
+- API RESTful para manipulação de usuários e senhas.
+
+## Como Rodar o Projeto
+
+### Back-End (Java Spring Boot)
+
+1. Clone o repositório do back-end:
+   ```bash
+   git clone https://github.com/arthurigm1/ListaTarefas.git
+Navegue até o diretório do back-end:
+bash
+Copiar
+Editar
+cd ListaTarefas/back-end
+Importe o projeto no seu IDE (IntelliJ IDEA, Eclipse, etc.).
+Altere as configurações de banco de dados no arquivo application.properties para apontar para o seu banco de dados PostgreSQL.
+Execute a aplicação Spring Boot.
+Front-End (Angular)
+Clone o repositório do front-end:
+bash
+Copiar
+Editar
+git clone https://github.com/arthurigm1/ListaTarefas.git
+Navegue até o diretório do front-end:
+bash
+Copiar
+Editar
+cd ListaTarefas/front-end
+Instale as dependências do projeto:
+bash
+Copiar
+Editar
+npm install
+Execute a aplicação Angular:
+bash
+Copiar
+Editar
 ng serve
-```
+Acesso Online
+Acesse o site do Arthur TaskList no Netlify
+Repositório GitHub do Projeto
+Contribuições
+Contribuições são bem-vindas! Se você tiver ideias para melhorar o projeto ou encontrar algum erro, fique à vontade para abrir uma issue ou enviar um pull request.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Licença
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
 
-## Code scaffolding
+arduino
+Copiar
+Editar
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Você pode adaptar conforme necessário para o seu projeto. Esse README explica claramente como roda
