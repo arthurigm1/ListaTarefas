@@ -89,3 +89,11 @@ main{
 
     }
 }
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column; /* Altere de linha para coluna em telas menores */
+    height: auto;       /* Permite que o conteúdo se ajuste verticalmente */
+    gap: 20px;   
+  }
+}
